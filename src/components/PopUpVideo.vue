@@ -17,12 +17,12 @@
                                 <div class="modal-content">
                                     <div class="modal-body mb-0 p-0">
                                         <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                            <iframe :src="popup.iframeSrc" allowfullscreen allow="autoplay"></iframe>
+                                            <iframe id="codingVideo" :src="popup.iframeSrc" allowfullscreen allow="autoplay"></iframe>
                                         </div>
                                     </div>
                                     <div class="modal-footer justify-content-center">
                                         <span class="mr-4">{{popup.footerText}}</span>
-                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" aria-hidden="true">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ export default {
                 class:"img-popup img-fluid"
             },
             popup:{         
-                iframeSrc:'https://www.youtube.com/embed/l9nh1l8ZIJQ?autoplay=1',
+                iframeSrc:"https://www.youtube-nocookie.com/embed/l9nh1l8ZIJQ?autoplay=1",
                 footerText:'Enjoy the vibrations of life',      
             },
             text:{
@@ -64,8 +64,10 @@ export default {
             }
         }
     },
-    created(){
-
+    beforeCreate(){
+        this.$nextTick(()=>{
+            document.getElementById('codingVideo').setAttribute('src','');
+        })
     }
 }
 </script>

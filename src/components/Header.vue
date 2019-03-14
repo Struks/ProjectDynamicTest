@@ -51,22 +51,12 @@
                 target="_blank"
                 class="mr-1"
               >
-                <svg
-                  :xmlns="xmlns"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="35"
+                <svgicon 
+                  :name="media.name" 
+                  width="35" 
                   height="35"
-                  :viewBox="media.viewBox"
-                >
-                  <defs>
-                    <path :id="media.id" :d="media.d"></path>
-                  </defs>
-                  <g>
-                    <g :transform="media.transform">
-                      <use fill="#dadada" xlink:href="'#' + media.id"></use>
-                    </g>
-                  </g>
-                </svg>
+                  :class="media.class"
+                ></svgicon>
               </a>
             </li>
             <!--social media hamburger-->
@@ -104,7 +94,7 @@ export default {
       menues: [
         { link: "/", name: "HOME", exact: true },
         { link: "/About", name: "ABOUT", exact: false },
-        { link: "/Work#grid", name: "WORK", exact: false },
+        { link: "/Work", name: "WORK", exact: false },
         { link: "/Contact", name: "CONTACT", exact: false },
         { link: "/Link", name: "TEST", exact: false }
       ],
@@ -112,28 +102,33 @@ export default {
       socialMedia: [
         {
           href: "http://www.twitter.com",
-          name: "twitter"
+          name: "twitter",
+          class: "twitter",
         },
         {
           href: "http://www.facebook.com",
-          name: "facebook"
+          name: "facebook",
+          class:'facebook'
         },
         {
           href: "http://www.rss.com",
-          name: "rss"
+          name: "rss",
+          class: "rss"
         },
         {
           href: "http://www.pinterest.com",
           name: "pinterest",
-          id: "pinterest"
+          class: "pinterest",
         },
         {
           href: "https://plus.google.com",
-          name: "google+"
+          name: "google+",
+          class: "google"
         },
         {
-          href: "http://www.tribbble.com",
-          name: "tribbble"
+          href: "http://www.dribbble.com",
+          name: "tribbble",
+          class: "dribbble",
         }
       ]
     };
@@ -157,6 +152,9 @@ hr {
 .router-link-active {
   color: #2ecc71 !important;
 }
+a svg{
+  color: #dadada;
+}
 @media (max-width: 425px) {
   button {
     margin-left: 160px;
@@ -173,5 +171,3 @@ hr {
   }
 }
 </style>
-
-

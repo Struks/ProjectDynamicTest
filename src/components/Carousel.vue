@@ -21,25 +21,11 @@
     <div class="container">
       <div class="inline-arrows row">
         <button type="button" class="prev-slide col-md-1 offset-md-2 d-none d-md-block" @click="prev()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svgicon name="prevvv"
             width="21"
             height="31"
-            viewBox="0 0 21 31"
-          >
-            <defs>
-              <path
-                id="prev"
-                d="M392.294 1746l-15.293 15.5 15.293 15.5 5.705-5.702-9.667-9.798 9.667-9.798z"
-              ></path>
-            </defs>
-            <g>
-              <g transform="translate(-377 -1746)">
-                <use fill="#efefef" xlink:href="#prev"></use>
-              </g>
-            </g>
-          </svg>
+            id='prev'      
+            ></svgicon>
         </button>
         <div class="col col-md-7">
           <slick class="slick-paragraphs" id="slick2" ref="slick2" :options="slickOptions2">
@@ -54,7 +40,7 @@
           </slick>
         </div>
         <button type="button" class="next-slide col-md-1 d-none d-md-block" @click="next()">
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="21"
@@ -72,7 +58,14 @@
                 <use fill="#efefef" xlink:href="#next"></use>
               </g>
             </g>
-          </svg>
+          </svg> -->
+          <svgicon 
+            name='nextttt' 
+            id="next"
+            width="21"
+            height="31"
+            :fill='true' 
+          ></svgicon>
         </button>
       </div>
     </div>
@@ -82,7 +75,7 @@
 
 <script>
 import Slick from "vue-slick";
-
+import './icons'
 export default {
   components: { Slick },
   data() {
@@ -241,14 +234,17 @@ button {
   background: none;
   cursor: pointer;
   outline:none;
-  margin-bottom: 48px;
+  margin-bottom: 78px; 
+  margin-top: 30px;
+  color:#efefef
 }
 button:hover #next,
 button:hover #prev{
-  fill: #2ecc71;
+  color: #2ecc71;
   transition: 100ms;
   transition-timing-function: ease-out;
 }
+
 </style>
 
 

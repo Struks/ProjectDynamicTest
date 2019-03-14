@@ -24,7 +24,7 @@
               <a href="/About">ABOUT&NonBreakingSpace;&NonBreakingSpace;</a>/
             </li>
             <li class="nav-link">
-              <a href="/Work#grid">WORK&NonBreakingSpace;&NonBreakingSpace;</a>/
+              <a href="/Work">WORK&NonBreakingSpace;&NonBreakingSpace;</a>/
             </li>
             <li class="nav-link">
               <a href="/Contact">CONTACT</a>

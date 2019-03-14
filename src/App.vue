@@ -123,34 +123,31 @@ p{
 /* recommended css code for vue-svgicon */
 .vue-svg-icon {
   display: inline-block;
-  width: 16px;
-  height: 16px;
   color: inherit;
   vertical-align: middle;
-  fill:none;
+  fill: none;
   stroke: currentColor;
-}
+} 
 
 .vue-svg-fill {
   fill: currentColor;
   stroke: none;
-}
+}  
 
-.vue-svg-up {
+.svg-up {
   /* default */
   transform: rotate(0deg);
 }
 
-.vue-svg-right {
+.svg-right {
   transform: rotate(90deg);
 }
 
-.vue-svg-down {
+.svg-down {
   transform: rotate(180deg);
 }
 
-.vue-svg-left {
+.svg-left {
   transform: rotate(-90deg);
 }
-
 </style>

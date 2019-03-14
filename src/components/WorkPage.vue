@@ -52,53 +52,21 @@
           
           <!-- list/grid icons -->
           <div class="list-grid-layout d-none d-md-block float-right">
-            <router-link class="nav-item" to="#grid" >
-              <svg
-                @click="switchToGrid()"
-                enable-background="new 0 0 52 51"
-                height="51px"
+            <a class="nav-item" href="#grid" >
+              <svgicon
+                name="gridView"
                 id="grid-view"
-                version="1.1"
-                viewBox="0 0 52 51"
-                width="52px"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g>
-                  <rect id="grid-view" fill="#737373" height="23" width="23"></rect>
-                  <rect id="grid-view" fill="#737373" height="23" width="23" x="29"></rect>
-                  <rect id="grid-view" fill="#737373" height="23" width="23" y="28"></rect>
-                  <rect id="grid-view" fill="#737373" height="23" width="23" x="29" y="28"></rect>
-                </g>
-              </svg>
-            </router-link>
-            <router-link class="nav-item" to="#list" >
-              <svg
-                @click="switchToList()"
-                height="14px"
-                version="1.1"
-                viewBox="0 0 19 14"
-                width="19px"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <title></title>
-                <desc></desc>
-                <defs></defs>
-                <g fill="none" fill-rule="evenodd" id="list-view" stroke="none" stroke-width="1">
-                  <g fill="#737373" id="list-view" transform="translate(-45.000000, -509.000000)">
-                    <g id="list-view" transform="translate(45.500000, 509.000000)">
-                      <path
-                        d="M0,10 L17,10 L17,8 L0,8 L0,10 L0,10 Z M0,14 L17,14 L17,12 L0,12 L0,14 L0,14 Z M0,6 L17,6 L17,4 L0,4 L0,6 L0,6 Z M0,0 L0,2 L17,2 L17,0 L0,0 L0,0 Z"
-                        id="list-view"
-                      ></path>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </router-link>
+                @click="switchToGrid(1)" :class="{activeView : active_view == 1}"
+
+              ></svgicon>
+            </a>
+            <a class="nav-item" href="#list" >
+              <svgicon
+                name="listView"
+                id="list-view"
+                @click="switchToList(2)" :class="{activeView : active_view == 2}"
+              ></svgicon>
+            </a>
           </div>
       </div>
 
@@ -184,7 +152,8 @@ export default {
         }
       ],
       selectedCategory: "All",
-      active_el: 1
+      active_el: 1,
+      active_view: 1,
     };
   },
   computed: {
@@ -205,19 +174,21 @@ export default {
   },
   methods:{
     //grid-list methods
-    switchToGrid:function(){
+    switchToGrid:function(view){
       let portfolioClass = document.getElementById('portfolio').classList;
       if(portfolioClass.contains('list-layout')){
         portfolioClass.remove('list-layout');
         portfolioClass.add('grid-layout')
       }
+      return this.active_view = view
     },
-    switchToList:function(){
+    switchToList:function(view){
       let portfolioClass = document.getElementById('portfolio').classList;
       if(portfolioClass.contains('grid-layout')){
         portfolioClass.remove('grid-layout');
         portfolioClass.add('list-layout')
       }
+      return this.active_view = view
     },
     //paint category list
     active:function(el) {
@@ -278,19 +249,10 @@ label input[type="radio"]{
   width: 15px;
   height: 15px;
   margin-top: 10px;
+  color: #7f7f7f ;
 }
-.router-link-active svg #list-view{
-  fill: #a5e4bb;
-  transition: 100ms;
-  transition-timing-function: ease-out;
-} 
-.router-link-active svg #grid-view{
-  fill: #a5e4bb;
-  transition: 100ms;
-  transition-timing-function: ease-out;
-}
-.list-grid-layout {
-  margin-left: 0px;
+.activeView{
+  color: #2ecc71 !important;
 }
 .grid-layout img{
   width: 100%;
