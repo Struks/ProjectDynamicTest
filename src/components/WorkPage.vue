@@ -32,8 +32,8 @@
       </div><!-- /categories for mobile view -->
 
       <!-- categories for dekstop view-->
-      <div class="row categories d-none d-md-block">
-        <div class="col filter">
+      <div class="categories d-none d-md-block">
+        <div class="filter">
           <label @click="active(1)" :class="{active : active_el == 1}">
             <input type="radio" checked v-model="selectedCategory" value="All">ALL
           </label>
@@ -51,7 +51,7 @@
         </div>
           
           <!-- list/grid icons -->
-          <div class="col-auto list-grid-layout d-none d-md-block">
+          <div class="list-grid-layout d-none d-md-block float-right">
             <router-link class="nav-item" to="#grid" >
               <svg
                 @click="switchToGrid()"
@@ -253,7 +253,7 @@ label input[type="radio"]{
   display: none;
 }
 .filter{
-  width: 80%;             
+  display: inline;            
 }
 .filter label::after{
   content: "/";
@@ -277,7 +277,7 @@ label input[type="radio"]{
 .list-grid-layout svg{
   width: 15px;
   height: 15px;
-  margin-right: 5px;
+  margin-top: 10px;
 }
 .router-link-active svg #list-view{
   fill: #a5e4bb;
@@ -303,6 +303,11 @@ label input[type="radio"]{
   grid-auto-columns: 1fr;
   grid-row-gap: 1.3em; 
 }
+@media(max-width: 768px){
+  .margin-bottom {
+    margin-bottom: 190px;
+  }
+}
 @media(max-width: 425px){
   .list-layout{
     text-align: center;
@@ -310,10 +315,8 @@ label input[type="radio"]{
   .margin-bottom {
     margin-bottom: 120px !important;
   }
-}
-@media(max-width: 768px){
-  .margin-bottom {
-    margin-bottom: 190px;
+  label{
+    margin-left: 5px;
   }
 }
 .z-hovr {

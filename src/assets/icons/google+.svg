@@ -1,24 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="34px" viewBox="0 0 35 34" enable-background="new 0 0 35 34" xml:space="preserve">  <image id="image0" width="35" height="34" x="0" y="0"
-    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAQAAAB/jKh3AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAAmJLR0QA/4ePzL8AAAAJcEhZ
-cwAACxMAAAsTAQCanBgAAAAHdElNRQfjARgBACIga76fAAADOklEQVRIx43WbWjXVRQH8M//72ya
-TnElWdqDKx308KKs1FkwCswV6LSUSDMC2aQmG8ze9KAUEb2IskULBXtwJRIEC5w2QTIVRuIgE5uu
-wphls5W0FaLLbb343/9vv/+Tet78zrnn3O/ve8+995yb6FZAxpprnnLXKDGgz3EdDhvKH1yUd/Ru
-dR43OWf8rO2adeVOSOSwmeltSyQKkTRsh/V+zxxMZgXVOKb6EiAkPaXL8sJsxmjyXIa322Gn/GuS
-W9xrZobvda/ky03CR56OrH7NPvRTxsTbrVFjQrBeVqIhl82rNkQTtmn0Z94lXa9ZdWQ1eDcT5mHt
-xoCLGjVdIjcJG2wM2RtUoXMUZpzvzQJDntDqclLrgwDUaa6h9E6tDSC8dAUgbPZO0OZYlWZT5BfT
-wSHzDV8BDMWOKAfH3JliszCAsD4L5GplypQF/0Q3R54LXgzaHe5PwSwLA50OxCCu9ZY13vCzjUrB
-Yu/H/K1OBm1ZCqYymDsymLQ4ocmTvjDXUeNMiU5MSoZ9HrRKkia6NZhfx4KussgZsFW5Ug3O2uIx
-IzHG6fi7JJKx9cZv7qAei8JfT/rbmxJWapPwYBTzQ5TBaUWmBKPfuQzSa233nXbPWl5g9/6ItMlJ
-hWS325zW7WDqnGLn6B0CFyOtKBlxmJBTwv6y02+ed1OwB7Kuammk9SedSiMqywha4hPrbHLet27M
-y3d2xKq3SJ8+U8ECo8XnGfUecA6btaqJ15ZIFoTvj/5L4mAwl8ZC1tkblnvBdpPysqkO3/2p49cW
-zKpYfTtihWmg2NKsg5mSe8wP2q7U1Zyk13jQYnVwFavziF/Bx/bngdmlCvSZYTBVbzapByOqtLsS
-WaUlaK/ZmC5bN+gK6+9TkbWt+eQ+e5WAM8r1p8vW6agOT7XPnMuAVPoqgNCon9E+1RQleroDsQ6R
-LQl19kQH71OfpZQ0zIiVjgZ9vG32eSin6SU9qsN7xga7Q22EHmt312nLWNBJuzPaXZUZMe83FhvI
-B0OJrdlttYBsUe98nGhc/rHCar2XgehRrTYOkvsUoMUsL+gpAHFcnXJf5mS+wDMpocJC88yOnkkn
-dNjjUP7w/wFoWdJhnShzsAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMS0yNFQwODowMDozNC0w
-NzowMGiwai4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDEtMjRUMDg6MDA6MzQtMDc6MDAZ7dKS
-AAAAAElFTkSuQmCC" />
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="34" viewBox="0 0 35 34">
+    <defs>
+        <path id="google" alt="google-plus icon" d="M1127.186 63.132c0 9.315-7.49 16.868-16.726 16.868-9.238 0-16.726-7.553-16.726-16.868 0-9.317 7.488-16.868 16.726-16.868 9.237 0 16.726 7.551 16.726 16.868zm-4.182 0c0-6.988-5.616-12.651-12.544-12.651-6.928 0-12.544 5.663-12.544 12.65s5.616 12.652 12.544 12.652c6.928 0 12.544-5.665 12.544-12.651zm-7.315-2.118v2.156l-1.055-.008.014-2.15h-2.132v-1.066h2.102v-2.104l1.09-.014.013 2.17h2.054v1.016zm-5.79-2.565c.784.304 1.2 1.225 1.2 2.17 0 .793-.436 1.476-1.051 1.962-.6.473-.715.671-.715 1.074 0 .344.643.928.98 1.168.985.702 1.303 1.354 1.303 2.442 0 1.357-1.302 2.706-3.66 2.706-2.07 0-3.814-.848-3.814-2.206 0-1.377 1.565-2.732 3.634-2.732.225 0 .458.02.672.02-.283-.278-.472-.567-.472-.986 0-.25.044-.54.155-.753-.113.008-.228.01-.347.01-1.698 0-2.836-1.219-2.836-2.729 0-1.478 1.571-2.754 3.24-2.754h3.726l-.834.608zm-1.703 6.96c-1.43-.016-2.71.878-2.71 1.953 0 1.096 1.032 2.009 2.462 2.009 2.01 0 2.71-.856 2.71-1.953 0-.132-.016-.261-.045-.387-.158-.62-.714-.929-1.49-1.473a3.087 3.087 0 0 0-.927-.15zm1.565-4.716c-.166-1.271-1.078-2.29-2.037-2.32-.96-.029-1.603.944-1.438 2.216.166 1.27 1.078 2.323 2.038 2.352.959.03 1.602-.977 1.437-2.248z" />
+    </defs>
+    <g>
+        <g transform="translate(-1093 -46)">
+            <use fill="#dadada" xlink:href="#google" />
+        </g>
+    </g>
 </svg>
