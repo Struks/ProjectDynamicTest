@@ -40,25 +40,6 @@
           </slick>
         </div>
         <button type="button" class="next-slide col-md-1 d-none d-md-block" @click="next()">
-          <!-- <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="21"
-            height="31"
-            viewBox="0 0 21 31"
-          >
-            <defs>
-              <path
-                id="next"
-                d="M1005.706 1777l15.293-15.5-15.293-15.5-5.705 5.702 9.667 9.798-9.667 9.798z"
-              ></path>
-            </defs>
-            <g>
-              <g transform="translate(-1000 -1746)">
-                <use fill="#efefef" xlink:href="#next"></use>
-              </g>
-            </g>
-          </svg> -->
           <svgicon 
             name='nextttt' 
             id="next"
@@ -75,7 +56,7 @@
 
 <script>
 import Slick from "vue-slick";
-import './icons'
+import '../icons'
 export default {
   components: { Slick },
   data() {

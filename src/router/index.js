@@ -4,8 +4,8 @@ import ContactPage from '@/components/ContactPage'
 import AboutPage from '@/components/AboutPage'
 import HomePage from '@/components/HomePage'
 import WorkPage from '@/components/WorkPage'
-import  NotFound  from '@/components/NotFound';
-import links from '@/components/links'
+import  NotFound  from '@/components/NotFound/NotFound';
+import links from '@/components/NotFound/links'
 //import HelloWorld from '@/components/HelloWorld'
 //import links from '@/components/links.vue'
 

@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Banner from './Banner.vue';
-import ContactForm from './ContactForm.vue';
-import ContactInfo from './ContactInfo.vue';
+import Banner from './banner/Banner.vue';
+import ContactForm from './contactComponents/ContactForm.vue';
+import ContactInfo from './contactComponents/ContactInfo.vue';
 export default {
     components:{
         'hero-banner': Banner,

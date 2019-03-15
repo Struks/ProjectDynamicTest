@@ -21,9 +21,9 @@
 
 <script>
 
-import Banner from './Banner.vue';
-import AboutUs from './AboutUs.vue';
-import TabServices from './tabServices.vue'
+import Banner from './banner/Banner.vue';
+import AboutUs from './aboutComponents/AboutUs.vue';
+import TabServices from './aboutComponents/tabServices.vue'
 
 export default {
     components:{

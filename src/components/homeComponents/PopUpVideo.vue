@@ -10,14 +10,14 @@
                         :alt="popupImage.alt" 
                         :data-toggle="popupImage.dataToggle"
                         :data-target="popupImage.dataTarget"
-                        
+                        @click="downloadVideo = true"
                         >
             <!-- modal--><div class="modal fade" id="modal" tabidenex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body mb-0 p-0">
                                         <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                            <iframe id="codingVideo" :src="popup.iframeSrc" allowfullscreen allow="autoplay"></iframe>
+                                            <iframe v-if="downloadVideo" id="codingVideo" :src="popup.iframeSrc" allowfullscreen allow="autoplay"></iframe>
                                         </div>
                                     </div>
                                     <div class="modal-footer justify-content-center">
@@ -61,14 +61,15 @@ export default {
                     <p>Programming language theory considers approaches to the description of computational processes, while computer programming itself involves the use of programming languages and complex systems.</p>
                     <p>P.S. Enjoy in good vibe.</p>
                 `
-            }
+            },
+            downloadVideo:false,
         }
     },
-    beforeCreate(){
-        this.$nextTick(()=>{
-            document.getElementById('codingVideo').setAttribute('src','');
-        })
-    }
+    // beforeCreate(){
+    //     this.$nextTick(()=>{
+    //         document.getElementById('codingVideo').setAttribute('src','');
+    //     })
+    // }
 }
 </script>
 

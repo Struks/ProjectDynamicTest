@@ -8,8 +8,8 @@
 
 <script>
 import './css/fonts.css'
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/header/Header.vue'
+import Footer from './components/footer/Footer.vue'
 import './css/media-queries.css'
 import '../node_modules/slick-carousel/slick/slick.css';
 
